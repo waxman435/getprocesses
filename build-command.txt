@@ -1,0 +1,1 @@
+dotnet publish --no-dependencies -c Release /p:PublishSingleFile=true /p:PublishTrimmed=true /p:Platform=x64
