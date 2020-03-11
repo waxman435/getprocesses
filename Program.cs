@@ -51,9 +51,10 @@ namespace getprocs
 
                 try {
 
-                    // Console.WriteLine(theprocess.MainModule.FileName);
+                    string runnedproc = theprocess.MainModule.FileName.ToLower();
+                    // Console.WriteLine(runnedproc);
 
-                    if (theprocess.MainModule.FileName == fields.Split(',')[0]) {
+                    if (runnedproc == fields.Split(',')[0].ToLower()) {
                         // Console.WriteLine(fields.Split(',')[1] + " FOUND");
                         procfound = 1;
                     }
